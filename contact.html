@@ -25,6 +25,25 @@
 		<link rel="stylesheet" type="text/css" href="fonts/template/styles.css">
 		<link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script>
+   $(document).ready (function () {
+    $("#done").click (function () {
+     $("#messageShow").hide ();
+     var name = $("#name").val ();
+     var email = $("#Email").val ();
+     var subject = $("#subject").val ();
+     var message = $("#message").val ();
+     var fail = "";
+     if (fail != "") {
+      $('#messageShow').html (fail + "<div class='clear'><br></div>");
+      $('#messageShow').show ();
+      return false;
+     }
+    });
+   });
+  </script>
 	</head>
 	<body>
 		<div class="site-container">
